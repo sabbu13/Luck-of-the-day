@@ -1,0 +1,78 @@
+/* Centering the content */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #ff9a9e, #fad0c4); /* Gradient background */
+    font-family: 'Arial', sans-serif;
+}
+
+/* Styling the container */
+.v1 {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9); /* Light background with transparency */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    padding: 30px;
+    width: 300px;
+}
+
+/* Styling the heading */
+#r1 {
+    font-size: 1.5em;
+    color: #333; /* Dark gray color */
+    margin-bottom: 20px;
+}
+
+/* Styling the input */
+#r2 {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #f39c12; /* Orange border */
+    border-radius: 10px;
+    font-size: 1em;
+}
+
+/* Styling the button */
+#r3 {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #f39c12; /* Orange button */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#r3:hover {
+    background-color: #e67e22; /* Darker orange on hover */
+}
+
+/* Styling the paragraphs */
+#r4, #score {
+    font-size: 1em;
+    color: #555; /* Medium gray */
+    margin-top: 10px;
+}
+
+/* Animating the text (optional) */
+.v1 p {
+    animation: popIn 0.5s ease-in-out;
+}
+
+ /* Keyframes for pop-in effect  */
+@keyframes popIn {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

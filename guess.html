@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luck of the day</title>
+    <link rel="stylesheet" href="guess.css">
+    <!-- <script src="guess.js"></script> -->
+</head>
+<body>
+    <div class="v1">
+        <h1 id="r1">
+            Guess the Number 1 to 10
+        </h1>
+        <input id="r2" type="number" min="1" max="10">
+        <button onclick="check()" id = "r3">
+            Check
+        </button>
+        <p id="r4">
+            You are Right
+        </p>
+        <p id = "r5">
+            Your score: 10
+        </p>
+    </div>
+</body>
+<script>
+       var number = document.getElementById("r2")
+var result = document.getElementById("r4")
+var score = document.getElementById("r5")
+var rn = Math.floor(Math.random() *10 ) + 1
+var tscore = 10
+function check()
+{
+    var enterednumber = parseInt(r2.value)
+    if(enterednumber == number)
+    {
+        console.log("Right")
+        result.textContent = "You are Right"
+    }
+    else
+    {
+        tscore--
+        score.textContent = "Yourscore: " + tscore
+        result.textContent = "You are Wrong. try again !"
+
+        if(tscore<=0)
+        {
+            result.textContent = "Game over ! the correct number was" + rn
+            tscore = 0
+        }
+    }
+}
+    
+
+</script>
+
+
+</html>
